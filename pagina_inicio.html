@@ -19,7 +19,9 @@
             <div class="col-12 col-md-6">
                 <p class="h2 fw-bold" style="margin: 0; color: black; font-size: 70;">Feliz</p>
                 <p class="h2 fw-bold" style="margin: 0; color: lightsalmon; font-size: 40px;">Cumpleaños!!</p>
-                <button class="btn-dark mt-3 btn-lg btn bi bi-cake text-pink-light" style="color: lightpink;" data-bs-toggle="modal" data-bs-target="#modal1"> Sorpresa</button>
+                <button class="btn-dark mt-3 btn-lg btn bi bi-cake text-pink-light" style="color: lightpink;" data-bs-toggle="modal" data-bs-target="#modal1" onclick="dispararConfeti()"> Sorpresa</button>    
+                <a href="/mensaje_aleatorio.html">pagina aleatoria</a>
+                
             </div>
             <div class="col-12 col-md-6">
                 <img src="/img/noviembre-noviembre-2023-hoja-calendario-espanol-simbolos-ano-paraguas-lluvia_562846-209.png" alt="">
@@ -41,7 +43,7 @@
         </section>
 
         <section class="bg-light p-3 p-md-5 rounded-4 shadow-sm contenido2">
-            <div id="carouselStacked" class="carousel slide col-12 col-md-8 col-lg-4 mx-auto mt-3 mb-3">
+            <div id="carouselStacked" class="carousel slide col-12 col-md-8 col-lg-4 mx-auto mt-3 mb-3" data-bs-ride="carousel" data-bs-interval="3000">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h5 class="mb-0">Cambio 4</h5>
                         <div>
@@ -73,6 +75,8 @@
         </section>
 
     </main>
+<script src="/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
 </body>
 </html>
