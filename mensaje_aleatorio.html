@@ -17,10 +17,17 @@
             <div class="d-flex align-items-center justify-content-center">
                 
                 <section class="capsula card shadow-sm p-4 text-center">
+                    <div style="display: flex; justify-content: start;">
+                        <a style="text-decoration: none; color: inherit;" href="/pagina_inicio.html"><i style="font-size: 100%; font-weight: bolder;" class="fa-solid fa-arrow-left-long"></i></a>
+                    </div>
 
-                   <button onclick="mensaje_aleatorio()" style="width: 100px; height: 50px;" id="btn_aleatorio">presioname</button>
-                   <p id="mensaje">boton de mensaje aleatorio</p>
-                   <a href="/pagina_inicio.html">pagina de inicio</a>
+
+                    <div id="img_mensaje">
+                        <img class="img-fluid" style="max-width: 130px; height: auto;" src="https://i.pinimg.com/originals/c0/2b/a9/c02ba9aea8d19e731c10172cfd09af6a.gif" alt=""></img>
+                    </div>
+                   <p id="mensaje"></p>
+                   <button onclick="mensaje_aleatorio()" id="btn_aleatorio" type="button" class="btn text-white fw-bold w-100 py-2 mt-3 shadow-sm" style="background-color: #E60067;">presioname</button>
+                   <div id="btn_cooldown"></div>
 
                 </section>
 
@@ -28,7 +35,8 @@
         </div>
     </main>
 
-    <script src="/js/script.js"></script>
+    <script src="/js/mensaje_aleatorio.js"></script>
+    <script src="https://kit.fontawesome.com/ce8d39fc41.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
