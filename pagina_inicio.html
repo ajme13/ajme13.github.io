@@ -19,8 +19,11 @@
             <div class="col-12 col-md-6">
                 <p class="h2 fw-bold" style="margin: 0; color: black; font-size: 70;">Feliz</p>
                 <p class="h2 fw-bold" style="margin: 0; color: lightsalmon; font-size: 40px;">Cumpleaños!!</p>
-                <button class="btn-dark mt-3 btn-lg btn bi bi-cake text-pink-light" style="color: lightpink;" data-bs-toggle="modal" data-bs-target="#modal1" onclick="dispararConfeti()"> Sorpresa</button>    
-                <a href="/mensaje_aleatorio.html">pagina aleatoria</a>
+                
+                
+                <button class="btn-dark mt-3 btn-lg btn bi bi-cake text-pink-light" style="color: lightpink;" data-bs-toggle="modal" data-bs-target="#modal1" onclick="dispararConfeti()"> Sorpresa</button> <br>
+                <button class="btn-dark mt-3 btn-lg btn text-pink-light" style="color: lightpink;" type="button" id="btn_principal"> Pagina aleatoria</button>
+                
                 
             </div>
             <div class="col-12 col-md-6">
@@ -43,40 +46,61 @@
         </section>
 
         <section class="bg-light p-3 p-md-5 rounded-4 shadow-sm contenido2">
-            <div id="carouselStacked" class="carousel slide col-12 col-md-8 col-lg-4 mx-auto mt-3 mb-3" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h5 class="mb-0">Cambio 4</h5>
-                        <div>
-                            <button class="btn btn-outline-dark btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="prev">
-                                <span class="bi bi-chevron-left" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="btn btn-outline-dark btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="next">
-                                <span class="bi bi-chevron-right" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+            <div class="gallery-container">
+                <div class="polaroid-container">
+                    <div class="polaroid-card">
+                        <div class="face front">
+                            <img src="https://i.pinimg.com/736x/07/cd/7a/07cd7a47b5963057198240350262b836.jpg" alt="Montañas">
+                            <span class="caption">Aventura 2026</span>
                         </div>
+                        <div class="face back">
+                            <div class="back-content">
+                                <h3>Naturaleza</h3>
+                                <p>Recuerdos del viaje a las montañas. ¡Un día increíble al aire libre!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-inner rounded-4">
-                    <div class="carousel-item active">
-                        <img src="https://i.pinimg.com/736x/07/cd/7a/07cd7a47b5963057198240350262b836.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="p-3 bg-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam fuga, excepturi, maiores suscipit est libero doloribus harum architecto ratione voluptas, nulla eum nihil qui repellat. Dolore numquam nisi temporibus harum? Praesentium perspiciatis vero temporibus natus perferendis odio? Eveniet nostrum, adipisci enim consequuntur consequatur earum. Modi tempora praesentium commodi autem quidem.</div>
+
+    <!-- Polaroid 2 -->
+            <div class="polaroid-container">
+                <div class="polaroid-card">
+                    <div class="face front">
+                        <img src="https://i.pinimg.com/originals/c1/bb/bd/c1bbbd15cf7faab31c91684bc51875aa.gif" alt="Lago">
+                        <span class="caption">Atardecer inolvidable</span>
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://i.pinimg.com/originals/c1/bb/bd/c1bbbd15cf7faab31c91684bc51875aa.gif" class="d-block w-100 img-fluid" alt="...">
-                        <div class="p-3 bg-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam maiores amet nemo obcaecati, dolores asperiores! Beatae nostrum labore quidem rem sit suscipit fuga officiis dolor iusto. Eaque dicta maiores eum dignissimos, minima hic voluptatum ullam excepturi asperiores. Praesentium delectus laborum quos, aspernatur, aperiam culpa rem eligendi numquam sint vel soluta.</div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://cdn-icons-png.flaticon.com/512/10338/10338034.png" class="d-block w-100 img-fluid" alt="...">
-                        <div class="p-3 bg-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium tempora reiciendis fuga excepturi temporibus aliquid nam architecto, hic perspiciatis dolores repellendus ex, omnis eligendi veniam odit porro suscipit. Ipsam in rerum, ducimus fugiat dicta architecto animi error quo, earum quaerat tempora sequi optio beatae doloribus. Debitis at ea iste dolorum.</div>
+                    <div class="face back">
+                        <div class="back-content">
+                            <h3>El Lago</h3>
+                            <p>Capturando los colores dorados antes de que cayera la noche.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-    </main>
+    <!-- Polaroid 3 -->
+            <div class="polaroid-container">
+                <div class="polaroid-card">
+                    <div class="face front">
+                        <img src="https://cdn-icons-png.flaticon.com/512/10338/10338034.png" alt="Medusa">
+                        <span class="caption">Momentos especiales</span>
+                    </div>
+                    <div class="face back">
+                        <div class="back-content">
+                            <h3>Mensaje Secreto</h3>
+                            <p>Gracias por estar presente en cada paso del camino. ¡Haz clic de nuevo!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
 <script src="/js/pagina_principal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
 </body>
 </html>
+
+

@@ -4,6 +4,7 @@ let error = document.getElementById("texto_error")
 
 
 
+
 if(btn){
     btn.addEventListener("click", ()=>{
     if(passcode.value === "Byron"){

@@ -86,3 +86,112 @@
     width: 400px;
 }
 
+.gallery-container {
+      display: grid;
+      grid-template-columns: repeat(3, 280px);
+      gap: 30px;
+      justify-content: center;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    /* Adaptación para pantallas pequeñas (Smartphones y Tabletas pequeñas) */
+    @media (max-width: 900px) {
+      .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 280px));
+      }
+    }
+
+    /* Contenedor individual con perspectiva 3D */
+    .polaroid-container {
+      height: 340px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    /* Tarjeta interna que realiza el giro */
+    .polaroid-card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+    }
+
+    /* Clase que se activa con JS para girar */
+    .polaroid-card.flipped {
+      transform: rotateY(180deg);
+    }
+
+    /* Caras frontal y trasera */
+    .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      background: #ffffff;
+      padding: 15px 15px 20px 15px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* EFECTO HOVER: Ligera elevación al pasar el mouse antes de dar clic */
+    .polaroid-container:hover .polaroid-card:not(.flipped) {
+      transform: translateY(-5px) rotate(1deg);
+    }
+
+    /* --- FRENTE --- */
+    .front img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 2px;
+      filter: contrast(1.05) sepia(0.12);
+    }
+
+    .front .caption {
+      margin-top: 15px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+
+    /* --- TRASERA --- */
+    .back {
+      transform: rotateY(180deg);
+      background: #faf6ee;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid #eae6df;
+    }
+
+    .back-content {
+      border: 2px dashed #d1c7b7;
+      padding: 15px;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2px;
+    }
+
+    .back-content h3 {
+      margin: 0 0 10px 0;
+      color: #5a4a42;
+      font-size: 1.1rem;
+    }
+
+    .back-content p {
+      margin: 0;
+      color: #6e5d53;
+      font-size: 0.88rem;
+      line-height: 1.4;
+    }
