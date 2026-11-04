@@ -22,3 +22,15 @@ function dispararConfeti() {
         card.classList.toggle('flipped');
       });
     });
+
+
+  function abrirVisorImagen(elemento) {
+    const imgElemento = elemento.querySelector('img');
+    const rutaImagen = imgElemento.src;
+    const textoAlt = imgElemento.alt;
+
+    document.getElementById('imagenModalExpandida').src = rutaImagen;
+
+    const modalVisor = new bootstrap.Modal(document.getElementById('modalVisor'));
+    modalVisor.show();
+}

@@ -1,7 +1,7 @@
 let cooldown = document.getElementById("btn_cooldown")
 let img_cooldown = document.getElementById("img_mensaje")
-const mensajes = ["Mensaje 1","Mensaje 2","Mensaje 3","Mensaje 4","Mensaje 5","Mensaje 6","Mensaje 7"]
-const TIEMPO_ESPERA_SEGUNDOS = 10
+const mensajes = ["Te quiero mucho","Sos una persona bastante especial","Las camisas manga largas no son sueteres","Me gustas mucho :3","Feliz Cumpleaños!!!","Sos mi atleta de alto rendimiento favorita :0", "Sos mi aspirante a 9no dan favorito", "Las navys estan infravaloradas", "Me encanta estar con vos", "Me encanta tu sonrisa", "El alcohol al 90 deberia ser el estandar"]
+const TIEMPO_ESPERA_SEGUNDOS = 5
 let mensaje_reinicio = document.getElementById("mensaje")
 let intervalo_cooldown = null
 const img_default = `<img class="img-fluid" style="max-width: 130px; height: auto;" src="https://i.pinimg.com/originals/c0/2b/a9/c02ba9aea8d19e731c10172cfd09af6a.gif" alt=""></img>`
