@@ -13,7 +13,7 @@ const mensajes = [
   "Me encanta tu sonrisa",
   "El alcohol al 90 deberia ser el estandar"
 ]
-const TIEMPO_ESPERA_SEGUNDOS = 1
+const TIEMPO_ESPERA_SEGUNDOS = 3600
 let mensaje_reinicio = document.getElementById("mensaje")
 let intervalo_cooldown = null
 const img_default = `<img class="img-fluid" style="max-width: 130px; height: auto;" src="https://i.pinimg.com/originals/c0/2b/a9/c02ba9aea8d19e731c10172cfd09af6a.gif" alt=""></img>`
