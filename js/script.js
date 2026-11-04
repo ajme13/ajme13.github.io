@@ -7,10 +7,10 @@ let error = document.getElementById("texto_error")
 
 if(btn){
     btn.addEventListener("click", ()=>{
-    if(passcode.value === "Byron"){
+    if(passcode.value === "2003-11-04"){
         window.location.href = "pagina_inicio.html"
     }else{
-        error.innerHTML = `<span>Nombre incorrecto</span>`
+        error.innerHTML = `<span>Fecha incorrecta</span>`
     }    
 })
 }
